@@ -21,7 +21,7 @@ export default function Tip({
           <Text style={{ fontWeight: "bold", fontSize: 18 }}>{title}</Text>
 
           {/* description */}
-          <Text style={{ fontSize: 16 }}>{description}</Text>
+          <Text style={{ fontSize: 16, opacity: 0.6 }}>{description}</Text>
         </View>
       </View>
     </>

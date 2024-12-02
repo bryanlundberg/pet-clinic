@@ -1,4 +1,5 @@
 import ContentInformation from "@/components/content-information";
+import FooterContact from "@/components/footer-contact";
 import HeaderInformation from "@/components/header-information";
 import Offer from "@/components/offer";
 import StandardContainer from "@/components/standard-container";
@@ -23,6 +24,7 @@ export default function Index() {
       />
 
       <Tips />
+      <FooterContact />
     </StandardContainer>
   );
 }
