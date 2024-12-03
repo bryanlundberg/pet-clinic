@@ -1,4 +1,5 @@
 import Logo from "@/components/logo";
+import { Link } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
 export default function ContentInformation() {
@@ -22,31 +23,32 @@ export default function ContentInformation() {
           ATENCIÓN VETERINARIA DE PRIMER NIVEL
         </Text>
 
-        <Pressable
-          onPress={() => alert("asd")}
-          style={{
-            borderColor: "green",
-            backgroundColor: "#05A78E",
-            paddingStart: 20,
-            paddingEnd: 20,
-            marginTop: 20,
-            borderRadius: 12,
-            minHeight: 50,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Text
+        <Link href={"/details"} asChild>
+          <Pressable
             style={{
-              textAlign: "center",
-              fontSize: 16,
-              color: "white",
-              fontWeight: "bold",
+              borderColor: "green",
+              backgroundColor: "#05A78E",
+              paddingStart: 20,
+              paddingEnd: 20,
+              marginTop: 20,
+              borderRadius: 12,
+              minHeight: 50,
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            RESERVA TU HORA
-          </Text>
-        </Pressable>
+            <Text
+              style={{
+                textAlign: "center",
+                fontSize: 16,
+                color: "white",
+                fontWeight: "bold",
+              }}
+            >
+              RESERVA TU HORA
+            </Text>
+          </Pressable>
+        </Link>
       </View>
     </>
   );
