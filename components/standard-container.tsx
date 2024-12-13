@@ -4,7 +4,8 @@ import { ScrollView, View } from "react-native";
 export default function StandardContainer({
   children,
   backgroundColor = "white",
-}: PropsWithChildren & { backgroundColor?: string }) {
+  styles,
+}: PropsWithChildren & { backgroundColor?: string; styles: any }) {
   return (
     <>
       <ScrollView>
@@ -13,6 +14,7 @@ export default function StandardContainer({
             flex: 1,
             padding: 10,
             backgroundColor: backgroundColor,
+            ...styles,
           }}
         >
           {children}
